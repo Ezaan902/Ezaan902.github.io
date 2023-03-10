@@ -344,7 +344,7 @@ figure {
 }
 
 .gtco-video:hover .overlay {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .gtco-video:hover a {
@@ -691,10 +691,18 @@ form label {
 }
 
 #gtco-features-2 {
-  background: #efefef;
+  background: rgba(0, 0, 0, 0.4);
   position: relative;
   float: left;
   width: 100%;
+}
+
+#gtco-features-2 h2 {
+  color: rgb(255, 255, 255);
+}
+
+#gtco-features-2 p {
+  color: rgb(255, 255, 255);
 }
 
 .feature-center {
@@ -818,7 +826,7 @@ form label {
 }
 
 #gtco-testimonial {
-  background: #efefef;
+  background: rgb(255, 255, 255);
 }
 
 #gtco-testimonial .testimony-slide {
@@ -826,7 +834,8 @@ form label {
 }
 
 #gtco-testimonial .testimony-slide span {
-  font-size: 12px;
+  margin-top: 5px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
@@ -842,7 +851,7 @@ form label {
 }
 
 #gtco-testimonial .testimony-slide figure img {
-  width: 90px;
+  width: 200px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -974,36 +983,44 @@ form label {
 }
 
 #gtco-subscribe {
-  background: #333333;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 #gtco-subscribe .gtco-heading h2 {
-  color: #fff;
+  color: rgb(255, 255, 255);
+}
+
+#gtco-subscribe h2 {
+  color: rgb(255, 255, 255);
+}
+
+#gtco-subscribe p {
+  color: rgb(255, 255, 255);
+}
+
+#gtco-subscribe label {
+  color: rgb(255, 255, 255);
+}
+
+#gtco-subscribe input {
+  background-color: rgb(255, 255, 255);
 }
 
 #gtco-subscribe .form-control {
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 16px !important;
   width: 100%;
   border: 2px solid transparent !important;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#gtco-subscribe .form-control:focus {
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.8) !important;
 }
 
 #gtco-subscribe .form-control::-webkit-input-placeholder {
-  color: #fff;
+  color: rgb(0, 0, 0)
 }
 
 #gtco-subscribe .form-control:-moz-placeholder {
   /* Firefox 18- */
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 #gtco-subscribe .form-control::-moz-placeholder {
@@ -1625,5 +1642,3 @@ form label {
 .js .animate-box {
   opacity: 0;
 }
-
-/*# sourceMappingURL=style.css.map */
