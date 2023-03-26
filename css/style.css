@@ -5,11 +5,14 @@
 }
 
 @font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-family: 'BikoRegular';
+  src: local('BikoRegular'), url('../fonts/biko/Biko_Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+}
+
+.hidden-real-element {
+  display: none;
 }
 
 .div-center-button {
@@ -22,9 +25,6 @@
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  /* left: 50%;
-  -ms-transform: translateX(50%);
-  transform: translateX(50%); */
 }
 
 /* =======================================================
@@ -33,12 +33,20 @@
 *
 * ======================================================= */
 body {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "BikoRegular", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
   color: #000;
   background: #fff;
+}
+
+.grey-name {
+  color: #6c6c6c;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 #page {
@@ -96,7 +104,7 @@ h5,
 h6,
 figure {
   color: #000;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "BikoRegular", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -557,14 +565,12 @@ figure {
   position: absolute;
   left: 0;
   top: .05em;
-  font-family: 'icomoon';
   speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -609,7 +615,6 @@ form label {
   margin: 0;
   padding: 0;
   color: white;
-  text-transform: uppercase;
 }
 
 #gtco-header .display-tc h1,
@@ -705,7 +710,7 @@ form label {
 }
 
 #gtco-features-2 {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.05);
   position: relative;
   float: left;
   width: 100%;
@@ -745,6 +750,34 @@ form label {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+}
+
+.feature-center .icon-orange {
+  width: 90px;
+  height: 90px;
+  background: #ed9663;
+  display: table;
+  text-align: center;
+  margin: 0 auto 30px auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.prestation-recherche {
+  width: 70%;
+  margin-top: 18%;
+}
+
+.prestation-traitement {
+  width: 70%;
+  margin-top: 16%;
+}
+
+.prestation {
+  width: 70%;
+  margin-top: 15%;
 }
 
 .feature-center .icon i {
@@ -1062,7 +1095,6 @@ form label {
   background: #000;
   color: #fff;
   font-size: 16px;
-  text-transform: uppercase;
   font-weight: 400;
   padding-left: 50px;
   padding-right: 50px;
@@ -1214,7 +1246,6 @@ form label {
 #gtco-offcanvas ul li.offcanvas-has-dropdown>a:after {
   position: absolute;
   right: 0px;
-  font-family: 'icomoon';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -1415,7 +1446,7 @@ form label {
 }
 
 .btn {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'BikoRegular';
   font-size: 16px;
   font-weight: 400;
   -webkit-transition: 0.5s;
