@@ -190,6 +190,54 @@
 		});
 	};
 
+	var goToAbout = function () {
+		$('.js-goabout').on('click', function (event) {
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $('#gtco-testimonial').offset().top
+			}, 500, 'easeInOutExpo');
+
+			return false;
+		});
+	};
+
+	var goToPortfolio = function () {
+		$('.js-goportfolio').on('click', function (event) {
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $('#gtco-features-2').offset().top
+			}, 500, 'easeInOutExpo');
+
+			return false;
+		});
+	};
+
+	var goToPresta = function () {
+		$('.js-gopresta').on('click', function (event) {
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $('#gtco-features').offset().top
+			}, 500, 'easeInOutExpo');
+
+			return false;
+		});
+	};
+
+	var goToContact = function () {
+		$('.js-gocontact').on('click', function (event) {
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $('#gtco-subscribe').offset().top
+			}, 500, 'easeInOutExpo');
+
+			return false;
+		});
+	};
+
 	// Loading page
 	var loaderPage = function () {
 		$(".gtco-loader").fadeOut("slow");
@@ -223,6 +271,10 @@
 		dropdown();
 		testimonialCarousel();
 		tabs();
+		goToAbout();
+		goToPortfolio();
+		goToPresta();
+		goToContact();
 		goToTop();
 		loaderPage();
 		counterWayPoint();

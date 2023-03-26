@@ -1,5 +1,4 @@
-//
 function displayAllReal() {
-    $("div").removeClass("hidden-real-element");
+    $("#hidden-real").removeClass("hidden-element");
     $('#buttonDisplayAllReal').remove();
 }

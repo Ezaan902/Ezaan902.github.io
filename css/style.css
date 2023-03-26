@@ -11,8 +11,33 @@
   font-style: normal;
 }
 
-.hidden-real-element {
+.bg1 {
+  background: url(../images/bg_1.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bg2 {
+  background: url(../images/bg_2.png) center center;
+}
+
+.bg3 {
+  background: url(../images/bg_3.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hidden-element {
   display: none;
+}
+
+.contact-info {
+  background-color: rgba(128, 128, 128, 0.22);
+  border-radius: 5%;
 }
 
 .div-center-button {
@@ -398,16 +423,6 @@ figure {
   border-bottom: 1px solid white;
 }
 
-.gtco-cover .overlay {
-  z-index: 1;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.4);
-}
-
 .gtco-cover>.gtco-container {
   position: relative;
   z-index: 10;
@@ -710,7 +725,6 @@ form label {
 }
 
 #gtco-features-2 {
-  background: rgba(0, 0, 0, 0.05);
   position: relative;
   float: left;
   width: 100%;
@@ -864,6 +878,14 @@ form label {
   line-height: 1.5;
   font-weight: bold;
   color: #000;
+}
+
+.gtco-heading-white h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #fff;
 }
 
 .gtco-heading p {
@@ -1027,10 +1049,6 @@ form label {
 
 .gtco-tabs .icon-xlg i {
   color: #000;
-}
-
-#gtco-subscribe {
-  background: rgba(0, 0, 0, 0.4);
 }
 
 #gtco-subscribe .gtco-heading h2 {
