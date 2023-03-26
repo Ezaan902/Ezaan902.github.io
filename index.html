@@ -43,12 +43,9 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
 </head>
 
-<!-- <body class="colormode"> --> <!-- TODO -->
-
-<body>
+<body class="colormode">
 
 	<div id="page">
 
@@ -68,8 +65,8 @@
 							<li class="border js-goportfolio"><a href="#">Portfolio</a></li>
 							<li class="border js-gopresta"><a href="#">Prestations</a></li>
 							<li class="border js-gocontact"><a href="#">Contact</a></li>
-							<!-- <li><img src="images/colormode.png" width="3%" onClick="switchSetColorMode()"
-									alt="Dark/Light mode"></li> -->
+							<li><a href="#"><img src="images/colormode.png" class="colormode-img-st"
+										onClick="switchSetColorMode()" alt="Dark/Light mode"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -99,7 +96,7 @@
 			<div class="gtco-container">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-						<h2 class="uppercase">À propos</h2>
+						<h2 class="uppercase invert-filter-colormode">À propos</h2>
 					</div>
 				</div>
 
@@ -110,8 +107,8 @@
 								<figure>
 									<img src="images/author.png" alt="Auteur" />
 								</figure>
-								<span class="grey-name">Axel Benoit</span>
-								<blockquote>
+								<span class="grey-name invert-filter-colormode">Axel Benoit</span>
+								<blockquote class="invert-filter-colormode">
 									<p>
 										Chargé d'études depuis quelques années dans un établissement public, j'ai décidé
 										de prendre mon indépendance
@@ -144,12 +141,12 @@
 					<div class="col-md-4 col-sm-4">
 						<div class="feature-center animate-box" data-animate-effect="fadeIn">
 							<div class="feature-center animate-box" data-animate-effect="fadeIn">
-								<a href="https://twitter.com/Ezaan84300488" target="_blank"><img src="images/bl_tw.png"
-										alt="Twitter" width="15%" /></a>
-								<a href="https://www.linkedin.com/in/axel-benoit/" target="_blank"><img
-										src="images/bl_lk.png" alt="LinkedIn" width="15%" /></a>
-								<a href="https://www.instagram.com/ezaan902" target="_blank"><img src="images/bl_ig.png"
-										alt="Instagram" width="15%" /></a>
+								<a href="https://twitter.com/Ezaan84300488" target="_blank"><img id="bl_tw"
+										src="images/bl_tw.png" alt="Twitter" class="mini-icon" /></a>
+								<a href="https://www.linkedin.com/in/axel-benoit/" target="_blank"><img id="bl_lk"
+										src="images/bl_lk.png" alt="LinkedIn" class="mini-icon" /></a>
+								<a href="https://www.instagram.com/ezaan902" target="_blank"><img id="bl_ig"
+										src="images/bl_ig.png" alt="Instagram" class="mini-icon" /></a>
 							</div>
 						</div>
 					</div>
@@ -190,7 +187,7 @@
 							<span class="icon">
 								<i>
 									<img src="images/portfolio_mt_1_satellitaires.png" alt="Cartes satellitaires"
-										width="100%" />
+										class="portfolio-mt-size" />
 								</i>
 							</span>
 							<h3>cartes satellitaires</h3>
@@ -200,7 +197,8 @@
 						<div class="feature-center animate-box" data-animate-effect="fadeIn">
 							<span class="icon">
 								<i>
-									<img src="images/portfolio_mt_2_relief.png" alt="Cartes en relief" width="100%" />
+									<img src="images/portfolio_mt_2_relief.png" alt="Cartes en relief"
+										class="portfolio-mt-size" />
 								</i>
 							</span>
 							<h3>cartes en relief</h3>
@@ -211,7 +209,7 @@
 							<span class="icon">
 								<i>
 									<img src="images/portfolio_mt_3_plan_villes.png" alt="Plans de ville"
-										width="100%" />
+										class="portfolio-mt-size" />
 								</i>
 							</span>
 							<h3>plans de ville</h3>
@@ -222,7 +220,7 @@
 							<span class="icon">
 								<i>
 									<img src="images/portfolio_mt_4_thematiques.png" alt="Cartes thématiques"
-										width="100%" />
+										class="portfolio-mt-size" />
 								</i>
 							</span>
 							<h3>cartes thématiques</h3>
@@ -233,7 +231,7 @@
 							<span class="icon">
 								<i>
 									<img src="images/portfolio_mt_5_anciennes.png" alt="Cartes anciennes"
-										width="100%" />
+										class="portfolio-mt-size" />
 								</i>
 							</span>
 							<h3>cartes anciennes</h3>
@@ -438,7 +436,7 @@
 
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-						<h2 class="uppercase">Prestations</h2>
+						<h2 class="uppercase invert-filter-colormode">Prestations</h2>
 						<p>Mes cartes s'adressent aux professionnels comme aux particuliers. Que vous soyez une
 							collectivité, une association, un entreprise ou que vous souhaitez simplement offrir un
 							cadeau, je peux vous accompagner.</p>
@@ -447,7 +445,7 @@
 
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center">
-						<h3>Ma démarche d'action en quelques étapes</h3>
+						<h3 class="invert-filter-colormode">Ma démarche d'action en quelques étapes</h3>
 						<br />
 					</div>
 				</div>
@@ -461,12 +459,13 @@
 										class="prestation-recherche" />
 								</i>
 							</span>
-							<h3>Recherche</h3>
-							<p>Exploration des diverses bases de données SIG disponibles en Open Data.
+							<h3 class="invert-filter-colormode">Recherche</h3>
+							<p class="invert-filter-colormode">Exploration des diverses bases de données SIG disponibles
+								en Open Data.
 								<small>(Openstreetmap,
 									IGN, Copernicus, USGS, NASA)</small>
 							</p>
-							<p>Je peux également utiliser vos données métiers.</p>
+							<p class="invert-filter-colormode">Je peux également utiliser vos données métiers.</p>
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-3">
@@ -477,9 +476,11 @@
 										class="prestation-traitement" />
 								</i>
 							</span>
-							<h3>Traitement</h3>
-							<p>Pré-traitement nécessaire en préparation de l'analyse.</p>
-							<p>Je procède à une vérification, une modification et une sélection des données pertinentes.
+							<h3 class="invert-filter-colormode">Traitement</h3>
+							<p class="invert-filter-colormode">Pré-traitement nécessaire en préparation de l'analyse.
+							</p>
+							<p class="invert-filter-colormode">Je procède à une vérification, une modification et une
+								sélection des données pertinentes.
 							</p>
 						</div>
 					</div>
@@ -491,10 +492,11 @@
 										class="prestation" />
 								</i>
 							</span>
-							<h3>Analyse</h3>
-							<p>Observation des données sélectionnées, transformation des données et choix des méthodes
+							<h3 class="invert-filter-colormode">Analyse</h3>
+							<p class="invert-filter-colormode">Observation des données sélectionnées, transformation des
+								données et choix des méthodes
 								de représentation.</p>
-							<p>Production des différentes couches cartographiques.</p>
+							<p class="invert-filter-colormode">Production des différentes couches cartographiques.</p>
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-3">
@@ -505,20 +507,21 @@
 										class="prestation" />
 								</i>
 							</span>
-							<h3>Composition</h3>
-							<p>Définition de l'aspect visuel général.</p>
-							<p>Assemblage des couches et superposition des calques.</p>
-							<p>Production du rendu.</p>
+							<h3 class="invert-filter-colormode">Composition</h3>
+							<p class="invert-filter-colormode">Définition de l'aspect visuel général.</p>
+							<p class="invert-filter-colormode">Assemblage des couches et superposition des calques.</p>
+							<p class="invert-filter-colormode">Production du rendu.</p>
 						</div>
 					</div>
 				</div>
 
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center">
-						<h3>Pour produire des cartes informatives, thématiques, décoratives ou abstraites pour
+						<h3 class="invert-filter-colormode">Pour produire des cartes informatives, thématiques,
+							décoratives ou abstraites pour
 							particuliers et professionnels.</h3>
 						<br />
-						<h4>Les logiciels utilisés pour produire</h4>
+						<h4 class="invert-filter-colormode">Les logiciels utilisés pour produire</h4>
 						<br />
 					</div>
 				</div>
@@ -528,17 +531,17 @@
 					</div>
 					<div class="col-md-2 col-sm-2">
 						<div class="feature-center animate-box" data-animate-effect="fadeIn">
-							<img src="images/qgis.png" alt="QGIS" width="90%" />
+							<img src="images/qgis.png" alt="QGIS" class="presta-soft-size" />
 						</div>
 					</div>
 					<div class="col-md-2 col-sm-2">
 						<div class="feature-center animate-box" data-animate-effect="fadeIn">
-							<img src="images/blender.png" alt="Blender" width="90%" />
+							<img src="images/blender.png" alt="Blender" class="presta-soft-size" />
 						</div>
 					</div>
 					<div class="col-md-2 col-sm-2">
 						<div class="feature-center animate-box" data-animate-effect="fadeIn">
-							<img src="images/adobe_icon.png" alt="Adobe" width="90%" />
+							<img src="images/adobe_icon.png" alt="Adobe" class="presta-soft-size" />
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-3">
@@ -546,7 +549,7 @@
 				</div>
 
 				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="col-md-8 col-md-offset-2 text-center invert-filter-colormode">
 						<p>
 							Pour une démarche personnalisée, une demande peut être réalisé en appuyant sur le bouton "me
 							contacter".
@@ -567,7 +570,7 @@
 						<div class="feature-center animate-box" data-animate-effect="fadeIn">
 							<span class="icon">
 								<i>
-									<img src="images/etsy.png" alt="Etsy" width="90%" />
+									<img src="images/etsy.png" alt="Etsy" class="presta-soft-size" />
 								</i>
 							</span>
 							<p><a href="https://www.etsy.com/fr/people/gq5kbt0rsgmfwqri" target="_blank"
@@ -578,7 +581,7 @@
 						<div class="feature-center animate-box" data-animate-effect="fadeIn">
 							<span class="icon">
 								<i>
-									<img src="images/deviantart.png" alt="DeviantArt" width="90%" />
+									<img src="images/deviantart.png" alt="DeviantArt" class="presta-soft-size" />
 								</i>
 							</span>
 							<p><a href="https://www.deviantart.com/abcarto" target="_blank"
@@ -633,8 +636,12 @@
 		</footer>
 	</div>
 
+	<!-- Icone bas droite -->
+	<div class="gocolormode">
+		<a href="#"><img src="images/up-colormode.png" onClick="switchSetColorMode()" alt="Dark/Light mode" /></a>
+	</div>
 	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><img src="images/arrowup.png" alt="Up" class="arrow-up" /></a>
+		<a href="#" class="js-gotop"><img src="images/up-arrow.png" alt="Up" class="arrow-up" /></a>
 	</div>
 
 	<!-- Scripts Js-->

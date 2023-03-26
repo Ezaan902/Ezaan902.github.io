@@ -184,8 +184,10 @@
 			var $win = $(window);
 			if ($win.scrollTop() > 200) {
 				$('.js-top').addClass('active');
+				$('.gocolormode').addClass('active');
 			} else {
 				$('.js-top').removeClass('active');
+				$('.gocolormode').removeClass('active');
 			}
 		});
 	};

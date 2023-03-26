@@ -43,9 +43,21 @@ function setColorMode(value) {
         setCookie("colorMode", value, 365);
 
         if (actualColorMode == 1) {
-            $(".colormode").css('background', 'black'); // TODO
+            $(".colormode").css('background', '#444444');
+            $(".bg1").css('filter', 'brightness(85%)');
+            $(".bg2").css('filter', 'brightness(85%)');
+            $(".bg3").css('filter', 'brightness(85%)');
+            $(".mini-icon").css('filter', 'invert(50%)');
+            $(".invert-filter-colormode").css('filter', 'invert(80%)');
+            $(".copyright").css('filter', 'invert(80%)');
         } else {
-            $(".colormode").css('background', 'white'); // TODO
+            $(".colormode").css('background', '#fff');
+            $(".bg1").css('filter', 'none');
+            $(".bg2").css('filter', 'none');
+            $(".bg3").css('filter', 'none');
+            $(".invert-filter-colormode").css('filter', 'none');
+            $(".mini-icon").css('filter', 'none');
+            $(".copyright").css('filter', 'none');
         }
     } catch (ex) {
         console.log('Failed to set color mode, Exception: ' + ex);
@@ -62,6 +74,3 @@ async function switchSetColorMode() {
 
 checkColorMode();
 setColorMode(actualColorMode);
-
-// Use example
-// <img src="img/pic.jpg" alt="Light/Dark mode image" onClick="switchSetColorMode()" />
