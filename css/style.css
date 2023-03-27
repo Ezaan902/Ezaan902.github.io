@@ -38,7 +38,7 @@
 .contact-info {
   background-color: rgba(128, 128, 128, 0.22);
   border-radius: 5%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 0px 2px inset, rgba(255, 255, 255, 0.2) 10px -10px 0px -2px, rgba(0, 0, 0, 0.35) 10px -10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 0px 2px inset;
 }
 
 .div-center-button {

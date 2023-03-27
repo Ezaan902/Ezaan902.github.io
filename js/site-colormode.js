@@ -43,7 +43,7 @@ function setColorMode(value) {
         setCookie("colorMode", value, 365);
 
         if (actualColorMode == 1) {
-            $(".colormode").css('background', '#444444');
+            $(".colormode").css('background', '#202124');
             $(".bg1").css('filter', 'brightness(85%)');
             $(".bg2").css('filter', 'brightness(85%)');
             $(".bg3").css('filter', 'brightness(85%)');
