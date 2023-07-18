@@ -8,27 +8,19 @@
 
 	<title>Axel BENOIT - Cartographe indépendant</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
 	<link rel="apple-touch-icon" href="images/icons-192.png" />
 	<link rel="apple-touch-icon" sizes="72x72" href="images/icons-192.png" />
 	<link rel="apple-touch-icon" sizes="114x114" href="images/icons-192.png" />
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta name="description" content="Productions et ventes de cartes" />
 	<meta name="keywords" content="axel benoit, cartographe, indé, indépendant, carte" />
 	<meta name="author" content="Axel BENOIT" />
-	<!-- <meta name="robots" content="" /> --> <!-- TODO -->
-
 	<meta property="og:title" content="Axel BENOIT - Cartographe indépendant" />
-	<meta property="og:image" content="" />
-	<meta property="og:url" content="" />
 	<meta property="og:site_name" content="Axel BENOIT - Cartographe indépendant" />
-	<meta property="og:description" content="" />
+	<meta property="og:description" content="Productions et ventes de cartes" />
 	<meta name="twitter:title" content="Axel BENOIT - Cartographe indépendant" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-
+	<meta name="robots" content="all" />
 	<link rel="manifest" href="manifest.json" />
 
 	<!-- Styles -->
@@ -36,7 +28,6 @@
 		type='text/css'>
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -44,31 +35,30 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
 </head>
 
-<!-- <body class="colormode"> --> <!-- TODO -->
-
-<body>
+<body class="colormode">
 
 	<div id="page">
 
 		<!-- Menu de navigation (haut de page) -->
-		<nav class="gtco-nav" role="navigation">
+		<nav class="gtco-nav">
 			<div class="gtco-container">
 				<div class="row">
 					<div class="col-xs-2">
-						<div id="gtco-logo"><a href="index.html"><img src="images/logo.png" width="90%" /></a></div>
+						<div id="gtco-logo"><a href="index.html"><img src="images/logo.png" class="btn-logo"
+									alt="Logo" /></a>
+						</div>
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="#">À propos</a></li>
-							<li><a href="#">Portfolio</a></li>
-							<li><a href="#">Prestations</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><img src="images/colormode.png" width="3%" onClick="switchSetColorMode()"></li>
-							<!-- TODO -->
+							<li class="active border"><a href="index.html">Home</a></li>
+							<li class="border js-goabout"><a href="#">À propos</a></li>
+							<li class="border js-goportfolio"><a href="#">Portfolio</a></li>
+							<li class="border js-gopresta"><a href="#">Prestations</a></li>
+							<li class="border js-gocontact"><a href="#">Contact</a></li>
+							<li><a href="#"><img src="images/colormode.png" class="colormode-img-st"
+										onClick="switchSetColorMode()" alt="Dark/Light mode"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -77,18 +67,15 @@
 		</nav>
 
 		<!-- Header page -->
-		<header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url(images/header.png);">
+		<header id="gtco-header" class="bg1 gtco-cover">
 			<div class="overlay"></div>
 			<div class="gtco-container">
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0 text-center">
 						<div class="display-t">
 							<div class="display-tc animate-box" data-animate-effect="fadeIn">
-								<h1>Axel BENOIT</h1>
+								<h1 class="uppercase">Axel Benoit</h1>
 								<h2>Cartographe indépendant</h2>
-								<p>
-
-								</p>
 							</div>
 						</div>
 					</div>
@@ -101,179 +88,504 @@
 			<div class="gtco-container">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-						<h2>À propos</h2>
+						<h2 class="uppercase invert-filter-colormode">À propos</h2>
 					</div>
 				</div>
+
 				<div class="row animate-box">
 					<div>
 						<div class="item">
 							<div class="testimony-slide active text-center">
 								<figure>
-									<img src="images/author.png" alt="user">
+									<img src="images/author.png" alt="Auteur" />
 								</figure>
-								<span>Axel BENOIT</a></span>
-								<blockquote>
+								<span class="grey-name invert-filter-colormode">Axel Benoit</span>
+								<blockquote class="invert-filter-colormode">
 									<p>
-										Chargé d'études depuis quelques années, j'ai décidé de prendre mon indépendance
+										Chargé d'études depuis quelques années dans un établissement public, j'ai décidé
+										de prendre mon indépendance
 										par la voie de la cartographie.
 									</p>
 									<p>
-										Je vous accompagne dans la recherche de la carte parfaite qu'elle est un but
-										thématique ou décoratif.
+										La découverte en Master de la cartographie et des outils de SIG m'a amené à
+										développer une passion pour les cartes, leur objectif et ce quelles représentent
+										ou ne représentent pas. J'ai souhaité perfectionner cette passion durant mon
+										expérience de chargé d'études, avant de me lancer.
+									</p>
+									<p>
+										De cette passion de l'image et des cartes née l'attrait pour le métier de
+										cartographe. Un métier technique, scientifique et artistique dans lequel je
+										désire m'inscrire.
+									</p>
+									<p>
+										C'est pour cette raison que je souhaite vous accompagner dans la recherche de la
+										carte adaptée à votre besoin, que son but soit thématique ou décoratif.
 									</p>
 								</blockquote>
 							</div>
 						</div>
 					</div>
 				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="feature-center animate-box" data-animate-effect="fadeIn">
+							<div class="feature-center animate-box" data-animate-effect="fadeIn">
+								<a href="https://twitter.com/Ezaan84300488" target="_blank"><img id="bl_tw"
+										src="images/bl_tw.png" alt="Twitter" class="mini-icon" /></a>
+								<a href="https://www.linkedin.com/in/axel-benoit/" target="_blank"><img id="bl_lk"
+										src="images/bl_lk.png" alt="LinkedIn" class="mini-icon" /></a>
+								<a href="https://www.instagram.com/ezaan902" target="_blank"><img id="bl_ig"
+										src="images/bl_ig.png" alt="Instagram" class="mini-icon" /></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+					</div>
+				</div>
+
 			</div>
 		</div>
 
 		<!-- Portfolio avec miniatures  -->
-		<div id="gtco-features-2">
+		<!-- <div id="gtco-features-2" style="background-image:url(images/bg_2.png);"> -->
+		<div id="gtco-features-2" class="bg2">
 			<div class="gtco-container">
+
+				<!-- Texte Portfolio  -->
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-						<h2>Portfolio</h2>
-						<p>Ici vous pouvez jeter un oeil à mes productions.</p>
+						<h2 class="uppercase">Portfolio</h2>
+						<p>Ici, vous trouverez un exemple de mes diverses productions cartographiques. Ce portfolio
+							contient des cartes utilisant différentes méthodes cartographiques. Il regroupe des <b>
+								plans
+								de
+								villes</b>, des <b>cartes en reliefs</b>, des <b>cartes satellitaires</b> et des
+							<b>cartes d'analyse
+								spatiale</b> pour
+							illustrer mes compétences et vous aiguiller dans votre recherche.
+						</p>
 					</div>
 				</div>
 
+				<!-- 3 exemples  -->
+
+				<!-- Mountain / Medoc / Pearl River -->
 				<div class="row">
 					<div class="col-md-4">
-						<div class="gtco-video gtco-video-sm gtco-bg"
-							style="background-image: url(images/portfolio1.png); ">
-							<a href="images/portfolio1.png" class="popup-vimeo"><i>test</i></a>
-							<div class="overlay"></div>
-						</div>
+						<a href="images/realisations/Mountain_low.png" target="_blank">
+							<div class="gtco-video gtco-video-sm gtco-bg"
+								style="background-image: url(images/realisations/Mountain_low_miniature.png); ">
+								<div class="overlay"><img src="images/play_icon.png"
+										class="centered-image-play-button" /></div>
+							</div>
+						</a>
 					</div>
 					<div class="col-md-4">
-						<div class="gtco-video gtco-video-sm gtco-bg"
-							style="background-image: url(images/portfolio2.png); ">
-							<a href="images/portfolio2.png" class="popup-vimeo"><i>test</i></a>
-							<div class="overlay"></div>
-						</div>
+						<a href="images/realisations/Medoc_low.png" target="_blank">
+							<div class="gtco-video gtco-video-sm gtco-bg"
+								style="background-image: url(images/realisations/Medoc_low_miniature.png); ">
+								<div class="overlay"><img src="images/play_icon.png"
+										class="centered-image-play-button" /></div>
+							</div>
+						</a>
 					</div>
 					<div class="col-md-4">
-						<div class="gtco-video gtco-video-sm gtco-bg"
-							style="background-image: url(images/portfolio3.png); ">
-							<a href="images/portfolio3.png" class="popup-vimeo"><i>test</i></a>
-							<div class="overlay"></div>
-						</div>
+						<a href="images/realisations/PEARL_RIVER_low.png" target="_blank">
+							<div class="gtco-video gtco-video-sm gtco-bg"
+								style="background-image: url(images/realisations/PEARL_RIVER_low_miniature.png); ">
+								<div class="overlay"><img src="images/play_icon.png"
+										class="centered-image-play-button" /></div>
+							</div>
+						</a>
 					</div>
 				</div>
+				<br /><br />
 
+				<!-- Types de cartes  -->
 				<div class="row">
-					<div class="col-md-2">
-						<div class="gtco-video gtco-video-sm gtco-bg"
-							style="background-image: url(images/portfolio1.png); ">
-							<a href="images/portfolio1.png" class="popup-vimeo"><i>test</i></a>
-							<div class="overlay"></div>
+					<div class="col-md-1 col-sm-1">
+					</div>
+					<div class="col-md-2 col-sm-2">
+						<div class="feature-center animate-box" data-animate-effect="fadeIn">
+							<span class="icon">
+								<i>
+									<img src="images/portfolio_mt_1_satellitaires.png" alt="Cartes satellitaires"
+										class="portfolio-mt-size" />
+								</i>
+							</span>
+							<h3>cartes satellitaires</h3>
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div class="gtco-video gtco-video-sm gtco-bg"
-							style="background-image: url(images/portfolio2.png); ">
-							<a href="images/portfolio2.png" class="popup-vimeo"><i>test</i></a>
-							<div class="overlay"></div>
+					<div class="col-md-2 col-sm-2">
+						<div class="feature-center animate-box" data-animate-effect="fadeIn">
+							<span class="icon">
+								<i>
+									<img src="images/portfolio_mt_2_relief.png" alt="Cartes en relief"
+										class="portfolio-mt-size" />
+								</i>
+							</span>
+							<h3>cartes en relief</h3>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="gtco-video gtco-video-sm gtco-bg"
-							style="background-image: url(images/portfolio3.png); ">
-							<a href="images/portfolio3.png" class="popup-vimeo"><i>test</i></a>
-							<div class="overlay"></div>
+					<div class="col-md-2 col-sm-2">
+						<div class="feature-center animate-box" data-animate-effect="fadeIn">
+							<span class="icon">
+								<i>
+									<img src="images/portfolio_mt_3_plan_villes.png" alt="Plans de ville"
+										class="portfolio-mt-size" />
+								</i>
+							</span>
+							<h3>plans de ville</h3>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-2">
+						<div class="feature-center animate-box" data-animate-effect="fadeIn">
+							<span class="icon">
+								<i>
+									<img src="images/portfolio_mt_4_thematiques.png" alt="Cartes thématiques"
+										class="portfolio-mt-size" />
+								</i>
+							</span>
+							<h3>cartes thématiques</h3>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-2">
+						<div class="feature-center animate-box" data-animate-effect="fadeIn">
+							<span class="icon">
+								<i>
+									<img src="images/portfolio_mt_5_anciennes.png" alt="Cartes anciennes"
+										class="portfolio-mt-size" />
+								</i>
+							</span>
+							<h3>cartes anciennes</h3>
+						</div>
+					</div>
+					<div class="col-md-1 col-sm-1">
+					</div>
+				</div>
+
+				<!-- Exemples de cartes à visualiser -->
+
+				<!-- Cadiz -->
+				<div class="row">
+					<div class="col-md-5">
+						<a href="images/realisations/Cadiz_low_1.png" target="_blank">
+							<div class="gtco-video gtco-video-sm gtco-bg"
+								style="background-image: url(images/realisations/Cadiz_low_1_miniature.png); ">
+								<div class="overlay"></div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-7">
+						<a href="images/realisations/Cadiz_low_2.png" target="_blank">
+							<div class="gtco-video gtco-video-sm gtco-bg"
+								style="background-image: url(images/realisations/Cadiz_low_2_miniature.png); ">
+								<div class="overlay"></div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-12">
+						<a href="images/realisations/Cadiz_low_3.png" target="_blank">
+							<div class="gtco-video gtco-video-sm gtco-bg"
+								style="background-image: url(images/realisations/Cadiz_low_3_miniature.png); ">
+								<div class="overlay"></div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Grand canyon -->
+				<div class="row">
+					<br /><br />
+					<div class="col-md-7">
+						<a href="images/realisations/Grand_canyon_low_1.png" target="_blank">
+							<div class="gtco-video gtco-video-sm gtco-bg"
+								style="background-image: url(images/realisations/Grand_canyon_low_1_miniature.png); ">
+								<div class="overlay"></div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-5">
+						<a href="images/realisations/Grand_canyon_low_2.png" target="_blank">
+							<div class="gtco-video gtco-video-sm gtco-bg"
+								style="background-image: url(images/realisations/Grand_canyon_low_2_miniature.png); ">
+								<div class="overlay"></div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-12">
+						<a href="images/realisations/Grand_canyon_low_3.png" target="_blank">
+							<div class="gtco-video gtco-video-sm gtco-bg"
+								style="background-image: url(images/realisations/Grand_canyon_low_3_miniature.png); ">
+								<div class="overlay"></div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<!-- Hidden at start -->
+				<div id="hidden-real" class="hidden-element">
+
+					<!-- Corse -->
+					<div class="row">
+						<br /><br />
+						<div class="col-md-6">
+							<a href="images/realisations/Corse_low_1.png" target="_blank">
+								<div class="gtco-video gtco-video-sm gtco-bg"
+									style="background-image: url(images/realisations/Corse_low_1_miniature.png); ">
+									<div class="overlay"></div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-6">
+							<a href="images/realisations/Corse_low_2.png" target="_blank">
+								<div class="gtco-video gtco-video-sm gtco-bg"
+									style="background-image: url(images/realisations/Corse_low_2_miniature.png); ">
+									<div class="overlay"></div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-12">
+							<a href="images/realisations/Corse_low_3.png" target="_blank">
+								<div class="gtco-video gtco-video-sm gtco-bg"
+									style="background-image: url(images/realisations/Corse_low_3_miniature.png); ">
+									<div class="overlay"></div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<!-- Niort -->
+					<div class="row">
+						<br /><br />
+						<div class="col-md-7">
+							<a href="images/realisations/Niort_low_1.png" target="_blank">
+								<div class="gtco-video gtco-video-sm gtco-bg"
+									style="background-image: url(images/realisations/Niort_low_1_miniature.png); ">
+									<div class="overlay"></div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-5">
+							<a href="images/realisations/Niort_low_2.png" target="_blank">
+								<div class="gtco-video gtco-video-sm gtco-bg"
+									style="background-image: url(images/realisations/Niort_low_2_miniature.png); ">
+									<div class="overlay"></div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-12">
+							<a href="images/realisations/Niort_low_3.png" target="_blank">
+								<div class="gtco-video gtco-video-sm gtco-bg"
+									style="background-image: url(images/realisations/Niort_low_3_miniature.png); ">
+									<div class="overlay"></div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<!-- Turquie -->
+					<div class="row">
+						<br /><br />
+						<div class="col-md-5">
+							<a href="images/realisations/Turquie_low_1.png" target="_blank">
+								<div class="gtco-video gtco-video-sm gtco-bg"
+									style="background-image: url(images/realisations/Turquie_low_1_miniature.png); ">
+									<div class="overlay"></div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-7">
+							<a href="images/realisations/Turquie_low_2.png" target="_blank">
+								<div class="gtco-video gtco-video-sm gtco-bg"
+									style="background-image: url(images/realisations/Turquie_low_2_miniature.png); ">
+									<div class="overlay"></div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-12">
+							<a href="images/realisations/Turquie_low_3.png" target="_blank">
+								<div class="gtco-video gtco-video-sm gtco-bg"
+									style="background-image: url(images/realisations/Turquie_low_3_miniature.png); ">
+									<div class="overlay"></div>
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>
 
+				<!-- Bouton "Tout voir"-->
+				<div>
+					<br />
+					<button id="buttonDisplayAllReal" class="btn btn-primary center-button"
+						onClick="displayAllReal()">Tout
+						voir</button>
+				</div>
 			</div>
 		</div>
 
-
+		<!-- Prestations -->
 		<div id="gtco-features">
 			<div class="gtco-container">
 
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-						<h2>Prestations</h2>
-						<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem
-							provident. Odit ab aliquam dolor eius.</p>
+						<h2 class="uppercase invert-filter-colormode">Prestations</h2>
+						<p>Mes cartes s'adressent aux professionnels comme aux particuliers. Que vous soyez une
+							collectivité, une association, un entreprise ou que vous souhaitez simplement offrir un
+							cadeau, je peux vous accompagner.</p>
 					</div>
 				</div>
 
-				<div class="row">
-					<div class="col-md-3 col-sm-3">
-						<div class="feature-center animate-box" data-animate-effect="fadeIn">
-							<span class="icon">
-								<i class="icon-eye"></i>
-							</span>
-							<h3>Sources</h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem
-								provident. </p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3">
-						<div class="feature-center animate-box" data-animate-effect="fadeIn">
-							<span class="icon">
-								<i class="icon-command"></i>
-							</span>
-							<h3>Traitement</h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem
-								provident. </p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3">
-						<div class="feature-center animate-box" data-animate-effect="fadeIn">
-							<span class="icon">
-								<i class="icon-power"></i>
-							</span>
-							<h3>Analyse</h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem
-								provident. </p>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-3">
-						<div class="feature-center animate-box" data-animate-effect="fadeIn">
-							<span class="icon">
-								<i class="icon-power"></i>
-							</span>
-							<h3>Composition</h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem
-								provident. </p>
-						</div>
-					</div>
-				</div>
-
-				<br />
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center">
-						<h2>Pour produire des cartes informatives, thématiques, décoratives ou abstraites pour
-							particuliers et professionnels.</h2>
+						<h3 class="invert-filter-colormode">Ma démarche d'action en quelques étapes</h3>
+						<br />
 					</div>
 				</div>
 
-				<br /><br />
 				<div class="row">
-					<div class="col-md-6 col-sm-6">
+					<div class="col-md-3 col-sm-3">
 						<div class="feature-center animate-box" data-animate-effect="fadeIn">
-							<span class="icon">
-								<i class="icon-eye"></i>
+							<span class="icon-orange">
+								<i>
+									<img src="images/prestations_demarche_1_recherche.png" alt="Recherche"
+										class="prestation-recherche" />
+								</i>
 							</span>
-							<p><a href="#" class="btn btn-primary btn-outline">Etsy</a></p>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem
-								provident. </p>
+							<h3 class="invert-filter-colormode">Recherche</h3>
+							<p class="invert-filter-colormode">Exploration des diverses bases de données SIG disponibles
+								en Open Data.
+								<small>(Openstreetmap,
+									IGN, Copernicus, USGS, NASA)</small>
+							</p>
+							<p class="invert-filter-colormode">Je peux également utiliser vos données métiers.</p>
 						</div>
 					</div>
-					<div class="col-md-6 col-sm-6">
+					<div class="col-md-3 col-sm-3">
+						<div class="feature-center animate-box" data-animate-effect="fadeIn">
+							<span class="icon-orange">
+								<i>
+									<img src="images/prestations_demarche_2_traitement.png" alt="Traitement"
+										class="prestation-traitement" />
+								</i>
+							</span>
+							<h3 class="invert-filter-colormode">Traitement</h3>
+							<p class="invert-filter-colormode">Pré-traitement nécessaire en préparation de l'analyse.
+							</p>
+							<p class="invert-filter-colormode">Je procède à une vérification, une modification et une
+								sélection des données pertinentes.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<div class="feature-center animate-box" data-animate-effect="fadeIn">
+							<span class="icon-orange">
+								<i>
+									<img src="images/prestations_demarche_3_analyse.png" alt="Analyse"
+										class="prestation" />
+								</i>
+							</span>
+							<h3 class="invert-filter-colormode">Analyse</h3>
+							<p class="invert-filter-colormode">Observation des données sélectionnées, transformation des
+								données et choix des méthodes
+								de représentation.</p>
+							<p class="invert-filter-colormode">Production des différentes couches cartographiques.</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<div class="feature-center animate-box" data-animate-effect="fadeIn">
+							<span class="icon-orange">
+								<i>
+									<img src="images/prestations_demarche_4_composition.png" alt="Composition"
+										class="prestation" />
+								</i>
+							</span>
+							<h3 class="invert-filter-colormode">Composition</h3>
+							<p class="invert-filter-colormode">Définition de l'aspect visuel général.</p>
+							<p class="invert-filter-colormode">Assemblage des couches et superposition des calques.</p>
+							<p class="invert-filter-colormode">Production du rendu.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<h3 class="invert-filter-colormode">Pour produire des cartes informatives, thématiques,
+							décoratives ou abstraites pour
+							particuliers et professionnels.</h3>
+						<br />
+						<h4 class="invert-filter-colormode">Les logiciels utilisés pour produire</h4>
+						<br />
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-3 col-sm-3">
+					</div>
+					<div class="col-md-2 col-sm-2">
+						<div class="feature-center animate-box" data-animate-effect="fadeIn">
+							<img src="images/qgis.png" alt="QGIS" class="presta-soft-size" />
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-2">
+						<div class="feature-center animate-box" data-animate-effect="fadeIn">
+							<img src="images/blender.png" alt="Blender" class="presta-soft-size" />
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-2">
+						<div class="feature-center animate-box" data-animate-effect="fadeIn">
+							<img src="images/adobe_icon.png" alt="Adobe" class="presta-soft-size" />
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
+					</div>
+				</div>
+
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center invert-filter-colormode">
+						<p>
+							Pour une démarche personnalisée, une demande peut être réalisé en appuyant sur le bouton "me
+							contacter".
+						</p>
+						<p>
+							Pour les cartes faisant partie d'une collection. Les liens figurant ci-dessous vous
+							redirigeront vers mes boutiques en ligne. Vous pourrez avoir une estimation du prix des
+							produits.
+						</p>
+						<br />
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-3 col-sm-3">
+					</div>
+					<div class="col-md-3 col-sm-3">
 						<div class="feature-center animate-box" data-animate-effect="fadeIn">
 							<span class="icon">
-								<i class="icon-command"></i>
+								<i>
+									<img src="images/etsy.png" alt="Etsy" class="presta-soft-size" />
+								</i>
 							</span>
-							<p><a href="#" class="btn btn-primary btn-outline">DeviantArt</a></p>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem
-								provident. </p>
+							<p><a href="https://www.etsy.com/fr/people/gq5kbt0rsgmfwqri" target="_blank"
+									class="btn btn-primary btn-outline">Etsy</a></p>
 						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<div class="feature-center animate-box" data-animate-effect="fadeIn">
+							<span class="icon">
+								<i>
+									<img src="images/deviantart.png" alt="DeviantArt" class="presta-soft-size" />
+								</i>
+							</span>
+							<p><a href="https://www.deviantart.com/abcarto" target="_blank"
+									class="btn btn-primary btn-outline">DeviantArt</a></p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3">
 					</div>
 				</div>
 
@@ -281,46 +593,32 @@
 		</div>
 
 		<!-- Formulaire de contact -->
-		<div id="gtco-subscribe">
+		<div id="gtco-subscribe" class="bg3">
 			<div class="gtco-container">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-						<h2>Contact</h2>
-						<p>Be the first to know about the new templates.</p>
-					</div>
-				</div>
-				<div class="row animate-box">
-					<div class="col-md-12">
-						<form>
-							<input type="hidden" id="mailto" name="mailto" value="axelbenoit@test.test">
-							<div class="row form-group">
-								<div class="col-md-12">
-									<label for="subject">Subject</label>
-									<input type="text" id="subject" class="form-control"
-										placeholder="Your subject of this message">
-								</div>
-							</div>
-
-							<div class="row form-group">
-								<div class="col-md-12">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" cols="30" rows="10" class="form-control"
-										placeholder="Write us something"></textarea>
-								</div>
-							</div>
-							<div class="form-group">
-								<input value="Send mail" class="btn btn-primary" onClick="sendMailContact()">
-							</div>
-						</form>
+						<h2 class="uppercase">Contact</h2>
+						<br />
+						<p>
+							Si vous avez des questions ou si vous voulez formuler une demande de devis, vous pouvez me
+							joindre en appuyant sur le bouton ci-dessous
+						</p>
+						<br />
+						<button id="buttonContactMe" class="btn btn-primary" onClick="contactMe()">Me
+							contacter</button>
+						<div id="hidden-contact" class="hidden-element contact-info">
+							<h2 id="contact-mail">
+								<a href="mailto:ab.cartographe@gmail.com">ab.cartographe@gmail.com</a>
+							</h2>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- Bas de page -->
-		<footer id="gtco-footer" role="contentinfo">
+		<footer id="gtco-footer">
 			<div class="gtco-container">
-
 				<div class="row copyright">
 					<div class="col-md-12">
 						<p class="pull-left">
@@ -330,23 +628,18 @@
 							<small class="block">Developer: <a href="https://github.com/valsan-azerty-boi"
 									target="_blank">valsan-azerty-boi</a></small>
 						</p>
-						<p class="pull-right">
-						<ul class="gtco-social-icons pull-right">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-						</p>
 					</div>
 				</div>
-
 			</div>
 		</footer>
 	</div>
 
+	<!-- Icone bas droite -->
+	<div class="gocolormode">
+		<a href="#"><img src="images/up-colormode.png" onClick="switchSetColorMode()" alt="Dark/Light mode" /></a>
+	</div>
 	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><img src="images/arrowup.png" /></a>
+		<a href="#" class="js-gotop"><img src="images/up-arrow.png" alt="Up" class="arrow-up" /></a>
 	</div>
 
 	<!-- Scripts Js-->
@@ -356,11 +649,11 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.countTo.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/actualyear.js"></script>
-	<script src="js/colormode.js"></script>
+	<script src="js/site-main.js"></script>
+	<script src="js/site-displayreal.js"></script>
+	<script src="js/site-contact.js"></script>
+	<script src="js/site-actualyear.js"></script>
+	<script src="js/site-colormode.js"></script>
 </body>
 
 </html>
