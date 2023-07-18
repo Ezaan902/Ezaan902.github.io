@@ -46,6 +46,14 @@
   position: relative;
 }
 
+.centered-image-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 75px;
+}
+
 .center-button {
   display: flex;
   margin: 0 auto;
