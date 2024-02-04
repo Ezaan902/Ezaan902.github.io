@@ -30,10 +30,10 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css?version=1.6">
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
+		<script src="js/respond.min.js"></script>
 	<![endif]-->
 </head>
 
@@ -46,8 +46,8 @@
 			<div class="gtco-container">
 				<div class="row">
 					<div class="col-xs-2">
-						<div id="gtco-logo"><a href="index.html"><img src="images/logo.png" class="btn-logo"
-									alt="Logo" /></a>
+						<div id="gtco-logo"><a href="index.html"><img id="logo-pic" src="images/logo.png"
+									class="btn-logo" alt="Logo" /></a>
 						</div>
 					</div>
 					<div class="col-xs-10 text-right menu-1">
@@ -97,30 +97,10 @@
 						<div class="item">
 							<div class="testimony-slide active text-center">
 								<figure>
-									<img src="images/author.png" alt="Auteur" />
+									<img id="author-pic" src="" alt="Auteur" />
 								</figure>
 								<span class="grey-name invert-filter-colormode">Axel Benoit</span>
-								<blockquote class="invert-filter-colormode">
-									<p>
-										Chargé d'études depuis quelques années dans un établissement public, j'ai décidé
-										de prendre mon indépendance
-										par la voie de la cartographie.
-									</p>
-									<p>
-										La découverte en Master de la cartographie et des outils de SIG m'a amené à
-										développer une passion pour les cartes, leur objectif et ce quelles représentent
-										ou ne représentent pas. J'ai souhaité perfectionner cette passion durant mon
-										expérience de chargé d'études, avant de me lancer.
-									</p>
-									<p>
-										De cette passion de l'image et des cartes née l'attrait pour le métier de
-										cartographe. Un métier technique, scientifique et artistique dans lequel je
-										désire m'inscrire.
-									</p>
-									<p>
-										C'est pour cette raison que je souhaite vous accompagner dans la recherche de la
-										carte adaptée à votre besoin, que son but soit thématique ou décoratif.
-									</p>
+								<blockquote id="author-presentation-container" class="invert-filter-colormode">
 								</blockquote>
 							</div>
 						</div>
@@ -132,13 +112,8 @@
 					</div>
 					<div class="col-md-4 col-sm-4">
 						<div class="feature-center animate-box" data-animate-effect="fadeIn">
-							<div class="feature-center animate-box" data-animate-effect="fadeIn">
-								<a href="https://twitter.com/Ezaan84300488" target="_blank"><img id="bl_tw"
-										src="images/bl_tw.png" alt="Twitter" class="mini-icon" /></a>
-								<a href="https://www.linkedin.com/in/axel-benoit/" target="_blank"><img id="bl_lk"
-										src="images/bl_lk.png" alt="LinkedIn" class="mini-icon" /></a>
-								<a href="https://www.instagram.com/ezaan902" target="_blank"><img id="bl_ig"
-										src="images/bl_ig.png" alt="Instagram" class="mini-icon" /></a>
+							<div id="author-social-media-container" class="feature-center animate-box"
+								data-animate-effect="fadeIn">
 							</div>
 						</div>
 					</div>
@@ -150,7 +125,6 @@
 		</div>
 
 		<!-- Portfolio avec miniatures  -->
-		<!-- <div id="gtco-features-2" style="background-image:url(images/bg_2.png);"> -->
 		<div id="gtco-features-2" class="bg2">
 			<div class="gtco-container">
 
@@ -158,46 +132,31 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
 						<h2 class="uppercase">Portfolio</h2>
-						<p>Ici, vous trouverez un exemple de mes diverses productions cartographiques. Ce portfolio
-							contient des cartes utilisant différentes méthodes cartographiques. Il regroupe des <b>
-								plans
-								de
-								villes</b>, des <b>cartes en reliefs</b>, des <b>cartes satellitaires</b> et des
-							<b>cartes d'analyse
-								spatiale</b> pour
-							illustrer mes compétences et vous aiguiller dans votre recherche.
-						</p>
+						<blockquote id="portfolio-presentation-container">
+						</blockquote>
 					</div>
 				</div>
 
-				<!-- 3 exemples  -->
-
-				<!-- Mountain / Medoc / Pearl River -->
+				<!-- 3 portfolio videos/pic -->
 				<div class="row">
-					<div class="col-md-4">
-						<a href="images/realisations/Mountain_low.png" target="_blank">
-							<div class="gtco-video gtco-video-sm gtco-bg"
-								style="background-image: url(images/realisations/Mountain_low_miniature.png); ">
-								<div class="overlay"><img src="images/play_icon.png"
-										class="centered-image-play-button" /></div>
+					<div class="col-md-4" id="portfolio-video-1">
+						<a href="" target="_blank">
+							<div class="gtco-video gtco-video-sm gtco-bg" style="background-image: url(); ">
+								<div class="overlay"><img src="" class="centered-image-play-button" /></div>
 							</div>
 						</a>
 					</div>
-					<div class="col-md-4">
-						<a href="images/realisations/Medoc_low.png" target="_blank">
-							<div class="gtco-video gtco-video-sm gtco-bg"
-								style="background-image: url(images/realisations/Medoc_low_miniature.png); ">
-								<div class="overlay"><img src="images/play_icon.png"
-										class="centered-image-play-button" /></div>
+					<div class="col-md-4" id="portfolio-video-2">
+						<a href="" target="_blank">
+							<div class="gtco-video gtco-video-sm gtco-bg" style="background-image: url(); ">
+								<div class="overlay"><img src="" class="centered-image-play-button" /></div>
 							</div>
 						</a>
 					</div>
-					<div class="col-md-4">
-						<a href="images/realisations/PEARL_RIVER_low.png" target="_blank">
-							<div class="gtco-video gtco-video-sm gtco-bg"
-								style="background-image: url(images/realisations/PEARL_RIVER_low_miniature.png); ">
-								<div class="overlay"><img src="images/play_icon.png"
-										class="centered-image-play-button" /></div>
+					<div class="col-md-4" id="portfolio-video-3">
+						<a href="" target="_blank">
+							<div class="gtco-video gtco-video-sm gtco-bg" style="background-image: url(); ">
+								<div class="overlay"><img src="" class="centered-image-play-button" /></div>
 							</div>
 						</a>
 					</div>
@@ -208,59 +167,54 @@
 				<div class="row">
 					<div class="col-md-1 col-sm-1">
 					</div>
-					<div class="col-md-2 col-sm-2">
+					<div class="col-md-2 col-sm-2" id="portfolio-type-1">
 						<div class="feature-center animate-box" data-animate-effect="fadeIn">
 							<span class="icon">
 								<i>
-									<img src="images/portfolio_mt_1_satellitaires.png" alt="Cartes satellitaires"
-										class="portfolio-mt-size" />
+									<img src="" alt="" class="portfolio-mt-size" />
 								</i>
 							</span>
-							<h3>cartes satellitaires</h3>
+							<h3></h3>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-2">
+					<div class="col-md-2 col-sm-2" id="portfolio-type-2">
 						<div class="feature-center animate-box" data-animate-effect="fadeIn">
 							<span class="icon">
 								<i>
-									<img src="images/portfolio_mt_2_relief.png" alt="Cartes en relief"
-										class="portfolio-mt-size" />
+									<img src="" alt="" class="portfolio-mt-size" />
 								</i>
 							</span>
-							<h3>cartes en relief</h3>
+							<h3></h3>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-2">
+					<div class="col-md-2 col-sm-2" id="portfolio-type-3">
 						<div class="feature-center animate-box" data-animate-effect="fadeIn">
 							<span class="icon">
 								<i>
-									<img src="images/portfolio_mt_3_plan_villes.png" alt="Plans de ville"
-										class="portfolio-mt-size" />
+									<img src="" alt="" class="portfolio-mt-size" />
 								</i>
 							</span>
-							<h3>plans de ville</h3>
+							<h3></h3>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-2">
+					<div class="col-md-2 col-sm-2" id="portfolio-type-4">
 						<div class="feature-center animate-box" data-animate-effect="fadeIn">
 							<span class="icon">
 								<i>
-									<img src="images/portfolio_mt_4_thematiques.png" alt="Cartes thématiques"
-										class="portfolio-mt-size" />
+									<img src="" alt="" class="portfolio-mt-size" />
 								</i>
 							</span>
-							<h3>cartes thématiques</h3>
+							<h3></h3>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-2">
+					<div class="col-md-2 col-sm-2" id="portfolio-type-5">
 						<div class="feature-center animate-box" data-animate-effect="fadeIn">
 							<span class="icon">
 								<i>
-									<img src="images/portfolio_mt_5_anciennes.png" alt="Cartes anciennes"
-										class="portfolio-mt-size" />
+									<img src="" alt="" class="portfolio-mt-size" />
 								</i>
 							</span>
-							<h3>cartes anciennes</h3>
+							<h3></h3>
 						</div>
 					</div>
 					<div class="col-md-1 col-sm-1">
@@ -268,153 +222,13 @@
 				</div>
 
 				<!-- Exemples de cartes à visualiser -->
-
-				<!-- Cadiz -->
-				<div class="row">
-					<div class="col-md-5">
-						<a href="images/realisations/Cadiz_low_1.png" target="_blank">
-							<div class="gtco-video gtco-video-sm gtco-bg"
-								style="background-image: url(images/realisations/Cadiz_low_1_miniature.png); ">
-								<div class="overlay"></div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-7">
-						<a href="images/realisations/Cadiz_low_2.png" target="_blank">
-							<div class="gtco-video gtco-video-sm gtco-bg"
-								style="background-image: url(images/realisations/Cadiz_low_2_miniature.png); ">
-								<div class="overlay"></div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-12">
-						<a href="images/realisations/Cadiz_low_3.png" target="_blank">
-							<div class="gtco-video gtco-video-sm gtco-bg"
-								style="background-image: url(images/realisations/Cadiz_low_3_miniature.png); ">
-								<div class="overlay"></div>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- Grand canyon -->
-				<div class="row">
-					<br /><br />
-					<div class="col-md-7">
-						<a href="images/realisations/Grand_canyon_low_1.png" target="_blank">
-							<div class="gtco-video gtco-video-sm gtco-bg"
-								style="background-image: url(images/realisations/Grand_canyon_low_1_miniature.png); ">
-								<div class="overlay"></div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-5">
-						<a href="images/realisations/Grand_canyon_low_2.png" target="_blank">
-							<div class="gtco-video gtco-video-sm gtco-bg"
-								style="background-image: url(images/realisations/Grand_canyon_low_2_miniature.png); ">
-								<div class="overlay"></div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-12">
-						<a href="images/realisations/Grand_canyon_low_3.png" target="_blank">
-							<div class="gtco-video gtco-video-sm gtco-bg"
-								style="background-image: url(images/realisations/Grand_canyon_low_3_miniature.png); ">
-								<div class="overlay"></div>
-							</div>
-						</a>
-					</div>
-				</div>
+				<div class="row" id="portfolio-content-container"></div>
 
 				<!-- Hidden at start -->
 				<div id="hidden-real" class="hidden-element">
 
-					<!-- Corse -->
-					<div class="row">
-						<br /><br />
-						<div class="col-md-6">
-							<a href="images/realisations/Corse_low_1.png" target="_blank">
-								<div class="gtco-video gtco-video-sm gtco-bg"
-									style="background-image: url(images/realisations/Corse_low_1_miniature.png); ">
-									<div class="overlay"></div>
-								</div>
-							</a>
-						</div>
-						<div class="col-md-6">
-							<a href="images/realisations/Corse_low_2.png" target="_blank">
-								<div class="gtco-video gtco-video-sm gtco-bg"
-									style="background-image: url(images/realisations/Corse_low_2_miniature.png); ">
-									<div class="overlay"></div>
-								</div>
-							</a>
-						</div>
-						<div class="col-md-12">
-							<a href="images/realisations/Corse_low_3.png" target="_blank">
-								<div class="gtco-video gtco-video-sm gtco-bg"
-									style="background-image: url(images/realisations/Corse_low_3_miniature.png); ">
-									<div class="overlay"></div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<!-- Niort -->
-					<div class="row">
-						<br /><br />
-						<div class="col-md-7">
-							<a href="images/realisations/Niort_low_1.png" target="_blank">
-								<div class="gtco-video gtco-video-sm gtco-bg"
-									style="background-image: url(images/realisations/Niort_low_1_miniature.png); ">
-									<div class="overlay"></div>
-								</div>
-							</a>
-						</div>
-						<div class="col-md-5">
-							<a href="images/realisations/Niort_low_2.png" target="_blank">
-								<div class="gtco-video gtco-video-sm gtco-bg"
-									style="background-image: url(images/realisations/Niort_low_2_miniature.png); ">
-									<div class="overlay"></div>
-								</div>
-							</a>
-						</div>
-						<div class="col-md-12">
-							<a href="images/realisations/Niort_low_3.png" target="_blank">
-								<div class="gtco-video gtco-video-sm gtco-bg"
-									style="background-image: url(images/realisations/Niort_low_3_miniature.png); ">
-									<div class="overlay"></div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<!-- Turquie -->
-					<div class="row">
-						<br /><br />
-						<div class="col-md-5">
-							<a href="images/realisations/Turquie_low_1.png" target="_blank">
-								<div class="gtco-video gtco-video-sm gtco-bg"
-									style="background-image: url(images/realisations/Turquie_low_1_miniature.png); ">
-									<div class="overlay"></div>
-								</div>
-							</a>
-						</div>
-						<div class="col-md-7">
-							<a href="images/realisations/Turquie_low_2.png" target="_blank">
-								<div class="gtco-video gtco-video-sm gtco-bg"
-									style="background-image: url(images/realisations/Turquie_low_2_miniature.png); ">
-									<div class="overlay"></div>
-								</div>
-							</a>
-						</div>
-						<div class="col-md-12">
-							<a href="images/realisations/Turquie_low_3.png" target="_blank">
-								<div class="gtco-video gtco-video-sm gtco-bg"
-									style="background-image: url(images/realisations/Turquie_low_3_miniature.png); ">
-									<div class="overlay"></div>
-								</div>
-							</a>
-						</div>
-					</div>
+					<!-- Exemples de cartes à visualiser (++) -->
+					<div class="row" id="portfolio-content-additional-container"></div>
 				</div>
 
 				<!-- Bouton "Tout voir"-->
@@ -434,9 +248,7 @@
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
 						<h2 class="uppercase invert-filter-colormode">Prestations</h2>
-						<p>Mes cartes s'adressent aux professionnels comme aux particuliers. Que vous soyez une
-							collectivité, une association, un entreprise ou que vous souhaitez simplement offrir un
-							cadeau, je peux vous accompagner.</p>
+						<blockquote id="prestation-presentation-container"></blockquote>
 					</div>
 				</div>
 
@@ -599,16 +411,13 @@
 					<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
 						<h2 class="uppercase">Contact</h2>
 						<br />
-						<p>
-							Si vous avez des questions ou si vous voulez formuler une demande de devis, vous pouvez me
-							joindre en appuyant sur le bouton ci-dessous
-						</p>
+						<blockquote id="contact-presentation-container"></blockquote>
 						<br />
 						<button id="buttonContactMe" class="btn btn-primary" onClick="contactMe()">Me
 							contacter</button>
 						<div id="hidden-contact" class="hidden-element contact-info">
 							<h2 id="contact-mail">
-								<a href="mailto:ab.cartographe@gmail.com">ab.cartographe@gmail.com</a>
+								<a id="mailto-contact" href=""></a>
 							</h2>
 						</div>
 					</div>
@@ -625,7 +434,7 @@
 							<small class="block"><a href="#">Axel BENOIT</a> &copy; <span id="actualyear">2023</span>
 								All Rights
 								Reserved.</small>
-							<small class="block">Developer: <a href="https://github.com/valsan-azerty-boi"
+							<small id="the-dev" class="block">Developer: <a href="https://github.com/valsan-azerty-boi"
 									target="_blank">valsan-azerty-boi</a></small>
 						</p>
 					</div>
@@ -649,7 +458,7 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.countTo.js"></script>
-	<script src="js/site-main.js"></script>
+	<script src="js/site-main.js?version=1.15"></script>
 	<script src="js/site-displayreal.js"></script>
 	<script src="js/site-contact.js"></script>
 	<script src="js/site-actualyear.js"></script>

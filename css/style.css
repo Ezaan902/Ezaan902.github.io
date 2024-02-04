@@ -11,6 +11,14 @@
   font-style: normal;
 }
 
+blockquote {
+  border-left: none;
+}
+
+.margin-bottom-portfolio {
+  margin-bottom: 30px;
+}
+
 .bg1 {
   background: url(../images/bg_1.png) no-repeat center center;
   -webkit-background-size: cover;
