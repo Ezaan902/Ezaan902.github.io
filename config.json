@@ -1,5 +1,7 @@
 {
-    "logoPic": "images/logo.png",
+    "header": {
+        "logoPic": "images/logo_white.png"
+    },
     "author": {
         "authorPic": "images/author.png",
         "authorPresentation": [

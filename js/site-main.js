@@ -287,7 +287,7 @@ fetch('config.json')
 	.then(response => response.json())
 	.then(jsonData => {
 		const logoImage = document.getElementById("logo-pic");
-		logoImage.src = jsonData.logoPic;
+		logoImage.src = jsonData.header.logoPic;
 
 		const authorImage = document.getElementById("author-pic");
 		authorImage.src = jsonData.author.authorPic;
@@ -308,7 +308,7 @@ fetch('config.json')
 			img.id = item.icon.split('.')[0].replace('images/', '');
 			img.src = item.icon;
 			img.alt = item.name;
-			img.className = 'mini-icon';
+			img.className = 'mini-icon invert-filter-colormode';
 			anchor.appendChild(img);
 			miniIconContainer.appendChild(anchor);
 			miniIconContainer.append(" ");
