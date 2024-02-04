@@ -1,6 +1,6 @@
 {
-    "short_name": "Axel BENOIT",
-    "name": "Axel BENOIT - Cartographe indépendant",
+    "short_name": "abcarto",
+    "name": "abcarto - Axel BENOIT",
     "start_url": "index.html?source=pwa",
     "scope": "./",
     "icons": [
