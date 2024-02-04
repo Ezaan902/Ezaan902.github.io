@@ -282,3 +282,205 @@
 		counterWayPoint();
 	});
 }());
+
+fetch('config.json')
+	.then(response => response.json())
+	.then(jsonData => {
+		const head = document.head;
+		function setMetaTag(name, content) {
+			const existingMetaTag = head.querySelector(`meta[name="${name}"], meta[property="${name}"]`);
+
+			if (existingMetaTag) {
+				existingMetaTag.setAttribute('content', content);
+			} else {
+				const newMetaTag = document.createElement('meta');
+				newMetaTag.setAttribute('name', name);
+				newMetaTag.setAttribute('content', content);
+				head.appendChild(newMetaTag);
+			}
+		}
+		document.title = `${jsonData.header.title}`;
+		setMetaTag('author', jsonData.header.author);
+		setMetaTag('og:title', `${jsonData.header.title} - ${jsonData.header.author} - ${jsonData.header.profession}`);
+		setMetaTag('og:site_name', `${jsonData.header.title} - ${jsonData.header.author} - ${jsonData.header.profession}`);
+		setMetaTag('twitter:title', `${jsonData.header.title} - ${jsonData.header.author} - ${jsonData.header.profession}`);
+		setMetaTag('description', jsonData.header.description);
+		setMetaTag('og:description', jsonData.header.description);
+		setMetaTag('keywords', jsonData.header.keywords);
+
+		const logoImage = document.getElementById("logo-pic");
+		logoImage.src = jsonData.header.logoPic;
+
+		const authorImage = document.getElementById("author-pic");
+		authorImage.src = jsonData.author.authorPic;
+
+		const authorPresentationContainer = document.getElementById("author-presentation-container");
+		jsonData.author.authorPresentation.forEach(paragraph => {
+			const p = document.createElement("p");
+			p.innerHTML = paragraph;
+			authorPresentationContainer.appendChild(p);
+		});
+
+		const miniIconContainer = document.getElementById("author-social-media-container");
+		jsonData.author.authorSocialMedias.forEach(item => {
+			const anchor = document.createElement('a');
+			anchor.href = item.url;
+			anchor.target = '_blank';
+			const img = document.createElement('img');
+			img.id = item.icon.split('.')[0].replace('images/', '');
+			img.src = item.icon;
+			img.alt = item.name;
+			img.className = 'mini-icon invert-filter-colormode';
+			anchor.appendChild(img);
+			miniIconContainer.appendChild(anchor);
+			miniIconContainer.append(" ");
+		});
+
+		const portfolioPresentationContainer = document.getElementById("portfolio-presentation-container");
+		jsonData.portfolio.portfolioPresentation.forEach(paragraph => {
+			const p = document.createElement("p");
+			p.innerHTML = paragraph;
+			portfolioPresentationContainer.appendChild(p);
+		});
+
+		var colDiv = document.getElementById("portfolio-video-1");
+		var link = colDiv.querySelector("a");
+		var videoDiv = colDiv.querySelector(".gtco-video");
+		var overlayDiv = colDiv.querySelector(".overlay");
+		var playIcon = overlayDiv.querySelector("img");
+		link.href = jsonData.portfolio.portfolioContentVideoPresentation.item1.content;
+		videoDiv.style.backgroundImage = `url(${jsonData.portfolio.portfolioContentVideoPresentation.item1.miniature})`;
+		playIcon.src = jsonData.portfolio.portfolioContentVideoPresentation.videoIcon;
+
+		var colDiv = document.getElementById("portfolio-video-2");
+		var link = colDiv.querySelector("a");
+		var videoDiv = colDiv.querySelector(".gtco-video");
+		var overlayDiv = colDiv.querySelector(".overlay");
+		var playIcon = overlayDiv.querySelector("img");
+		link.href = jsonData.portfolio.portfolioContentVideoPresentation.item2.content;
+		videoDiv.style.backgroundImage = `url(${jsonData.portfolio.portfolioContentVideoPresentation.item2.miniature})`;
+		playIcon.src = jsonData.portfolio.portfolioContentVideoPresentation.videoIcon;
+
+		var colDiv = document.getElementById("portfolio-video-3");
+		var link = colDiv.querySelector("a");
+		var videoDiv = colDiv.querySelector(".gtco-video");
+		var overlayDiv = colDiv.querySelector(".overlay");
+		var playIcon = overlayDiv.querySelector("img");
+		link.href = jsonData.portfolio.portfolioContentVideoPresentation.item3.content;
+		videoDiv.style.backgroundImage = `url(${jsonData.portfolio.portfolioContentVideoPresentation.item3.miniature})`;
+		playIcon.src = jsonData.portfolio.portfolioContentVideoPresentation.videoIcon;
+
+
+		const portfolioType1 = document.getElementById("portfolio-type-1");
+		var iconElement = portfolioType1.querySelector("img");
+		var titleElement = portfolioType1.querySelector("h3");
+		iconElement.src = jsonData.portfolio.portfolioMiniatureTypes.item1.icon;
+		iconElement.alt = jsonData.portfolio.portfolioMiniatureTypes.item1.title;
+		titleElement.textContent = jsonData.portfolio.portfolioMiniatureTypes.item1.title;
+
+		const portfolioType2 = document.getElementById("portfolio-type-2");
+		var iconElement = portfolioType2.querySelector("img");
+		var titleElement = portfolioType2.querySelector("h3");
+		iconElement.src = jsonData.portfolio.portfolioMiniatureTypes.item2.icon;
+		iconElement.alt = jsonData.portfolio.portfolioMiniatureTypes.item2.title;
+		titleElement.textContent = jsonData.portfolio.portfolioMiniatureTypes.item2.title;
+
+		const portfolioType3 = document.getElementById("portfolio-type-3");
+		var iconElement = portfolioType3.querySelector("img");
+		var titleElement = portfolioType3.querySelector("h3");
+		iconElement.src = jsonData.portfolio.portfolioMiniatureTypes.item3.icon;
+		iconElement.alt = jsonData.portfolio.portfolioMiniatureTypes.item3.title;
+		titleElement.textContent = jsonData.portfolio.portfolioMiniatureTypes.item3.title;
+
+		const portfolioType4 = document.getElementById("portfolio-type-4");
+		var iconElement = portfolioType4.querySelector("img");
+		var titleElement = portfolioType4.querySelector("h3");
+		iconElement.src = jsonData.portfolio.portfolioMiniatureTypes.item4.icon;
+		iconElement.alt = jsonData.portfolio.portfolioMiniatureTypes.item4.title;
+		titleElement.textContent = jsonData.portfolio.portfolioMiniatureTypes.item4.title;
+
+		const portfolioType5 = document.getElementById("portfolio-type-5");
+		var iconElement = portfolioType5.querySelector("img");
+		var titleElement = portfolioType5.querySelector("h3");
+		iconElement.src = jsonData.portfolio.portfolioMiniatureTypes.item5.icon;
+		iconElement.alt = jsonData.portfolio.portfolioMiniatureTypes.item5.title;
+		titleElement.textContent = jsonData.portfolio.portfolioMiniatureTypes.item5.title;
+
+		const portfolioContentContainer = document.getElementById("portfolio-content-container");
+		jsonData.portfolio.portfolioContent.forEach(item => {
+			const div = document.createElement("div");
+			const a = document.createElement("a");
+			const img = document.createElement("img");
+
+			div.className = "col-md-12 margin-bottom-portfolio";
+			a.href = item.content;
+			a.target = "_blank";
+			img.src = item.content;
+			img.style.cssText = "height:auto; width:100%; border-radius:7px;";
+
+			a.appendChild(img);
+			div.appendChild(a);
+			portfolioContentContainer.appendChild(div);
+		});
+
+		const portfolioContentAddContainer = document.getElementById("portfolio-content-additional-container");
+		jsonData.portfolio.portfolioContentAdditionnal.forEach(item => {
+			const div = document.createElement("div");
+			const a = document.createElement("a");
+			const img = document.createElement("img");
+
+			div.className = "col-md-12 margin-bottom-portfolio";
+			a.href = item.content;
+			a.target = "_blank";
+			img.src = item.content;
+			img.style.cssText = "height:auto; width:100%; border-radius:7px;";
+
+			a.appendChild(img);
+			div.appendChild(a);
+			portfolioContentAddContainer.appendChild(div);
+		});
+
+		const prestationPresentationContainer = document.getElementById("prestation-presentation-container");
+		jsonData.prestation.prestationPresentation.forEach(paragraph => {
+			const p = document.createElement("p");
+			p.innerHTML = paragraph;
+			prestationPresentationContainer.appendChild(p);
+		});
+
+		const prestationDemarche = document.getElementById("prestation-presentation-demarche");
+		prestationDemarche.innerHTML = jsonData.prestation.prestationDemarche;
+
+		const prestationsCustObj = document.getElementById("prestations-cust-obj");
+		prestationsCustObj.innerHTML = jsonData.prestation.prestationsCustObj;
+
+		const prestationSoftwares = document.getElementById("prestations-soft-title");
+		prestationSoftwares.innerHTML = jsonData.prestation.prestationsSoftHeader;
+
+		const prestationComplementInfos = document.getElementById("prestation-complement-informations");
+		jsonData.prestation.prestationComplementInformations.forEach(paragraph => {
+			const p = document.createElement("p");
+			p.innerHTML = paragraph;
+			prestationComplementInfos.appendChild(p);
+		});
+		prestationComplementInfos.appendChild(document.createElement("br"));
+
+		const contactPresentationContainer = document.getElementById("contact-presentation-container");
+		jsonData.contact.contactPresentation.forEach(paragraph => {
+			const p = document.createElement("p");
+			p.innerHTML = paragraph;
+			contactPresentationContainer.appendChild(p);
+		});
+		const contactMailLink = document.getElementById("mailto-contact");
+		contactMailLink.innerHTML = jsonData.contact.contactMail;
+		contactMailLink.href = "mailto:" + jsonData.contact.contactMail;
+
+		const authorLinkFooter = document.getElementById("author-link-footer");
+		authorLinkFooter.innerHTML = jsonData.header.author;
+
+		const devSection = document.getElementById("the-dev");
+		if (jsonData.devIsVisible) {
+			devSection.style.display = "block";
+		} else {
+			devSection.style.display = "none";
+		}
+	}).catch(error => console.error('Error fetching JSON:', error));

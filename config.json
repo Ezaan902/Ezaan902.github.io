@@ -1,0 +1,135 @@
+{
+    "header": {
+        "title": "abcarto",
+        "author": "Axel BENOIT",
+        "profession": "Cartographe",
+        "description": "Productions et ventes de cartes",
+        "keywords": "axel benoit, cartographe, indé, indépendant, carte",
+        "logoPic": "images/logo_white.png"
+    },
+    "author": {
+        "authorPic": "images/author.png",
+        "authorPresentation": [
+            "Chargé d'études depuis quelques années dans un établissement public, j'ai décidé de prendre mon indépendance par la voie de la cartographie.",
+            "La découverte en Master de la cartographie et des outils de SIG m'a amené à développer une passion pour les cartes, leur objectif et ce qu'elles représentent ou ne représentent pas. J'ai souhaité perfectionner cette passion durant mon expérience de chargé d'études, avant de me lancer.",
+            "De cette passion de l'image et des cartes née l'attrait pour le métier de cartographe. Un métier technique, scientifique et artistique dans lequel je désire m'inscrire.",
+            "C'est pour cette raison que je souhaite vous accompagner dans la recherche de la carte adaptée à votre besoin, que son but soit thématique ou décoratif."
+        ],
+        "authorSocialMedias": [
+            {
+                "name": "LinkedIn",
+                "url": "https://www.linkedin.com/in/axel-benoit/",
+                "icon": "images/bl_lk.png"
+            },
+            {
+                "name": "Twitter",
+                "url": "https://twitter.com/abcartographe",
+                "icon": "images/bl_tw.png"
+            },
+            {
+                "name": "Instagram",
+                "url": "https://www.instagram.com/abcarto",
+                "icon": "images/bl_ig.png"
+            },
+            {
+                "name": "Etsy",
+                "url": "https://www.etsy.com/fr/people/gq5kbt0rsgmfwqri",
+                "icon": "images/bl_etsy.png"
+            },
+            {
+                "name": "DeviantArt",
+                "url": "https://www.deviantart.com/abcarto",
+                "icon": "images/bl_deviantart.png"
+            }
+        ]
+    },
+    "portfolio": {
+        "portfolioPresentation": [
+            "Ici, vous trouverez un exemple de mes diverses productions cartographiques. Ce portfolio contient des cartes utilisant différentes méthodes cartographiques. Il regroupe des <b>plans de villes</b>, des <b>cartes en reliefs</b>, des <b>cartes satellitaires</b> et des <b>cartes d'analyse spatiale</b> pour illustrer mes compétences et vous aiguiller dans votre recherche."
+        ],
+        "portfolioContentVideoPresentation": {
+            "videoIcon": "images/play_icon.png",
+            "item1": {
+                "miniature": "videos/carto_pearl_river.png",
+                "content": "videos/carto_pearl_river.webm"
+            },
+            "item2": {
+                "miniature": "videos/flow.png",
+                "content": "videos/flow.webm"
+            },
+            "item3": {
+                "miniature": "videos/data_densite_pop_gironde.png",
+                "content": "videos/data_densite_pop_gironde.webm"
+            }
+        },
+        "portfolioMiniatureTypes": {
+            "item1": {
+                "icon": "images/portfolio_mt_1_satellitaires.png",
+                "title": "cartes satellitaires"
+            },
+            "item2": {
+                "icon": "images/portfolio_mt_2_relief.png",
+                "title": "cartes en relief"
+            },
+            "item3": {
+                "icon": "images/portfolio_mt_3_plan_villes.png",
+                "title": "plans de ville"
+            },
+            "item4": {
+                "icon": "images/portfolio_mt_4_thematiques.png",
+                "title": "cartes thématiques"
+            },
+            "item5": {
+                "icon": "images/portfolio_mt_5_anciennes.png",
+                "title": "cartes anciennes"
+            }
+        },
+        "portfolioContent": [
+            {
+                "content": "images/realisations/plandetravail_cadiz.png"
+            },
+            {
+                "content": "images/realisations/plandetravail_grandcanyon.png"
+            }
+        ],
+        "portfolioContentAdditionnal": [
+            {
+                "content": "images/realisations/plandetravail_corse.png"
+            },
+            {
+                "content": "images/realisations/plandetravail_medoc.png"
+            },
+            {
+                "content": "images/realisations/plandetravail_turkey.png"
+            },
+            {
+                "content": "images/realisations/plandetravail_niort.png"
+            },
+            {
+                "content": "images/realisations/plandetravail_pearlriver.png"
+            },
+            {
+                "content": "images/realisations/plandetravail_mountainmist.png"
+            }
+        ]
+    },
+    "prestation": {
+        "prestationPresentation": [
+            "Mes cartes s'adressent aux professionnels comme aux particuliers. Que vous soyez une collectivité, une association, un entreprise ou que vous souhaitez simplement offrir un cadeau, je peux vous accompagner."
+        ],
+        "prestationDemarche": "Ma démarche d'action en quelques étapes",
+        "prestationsCustObj": "Pour produire des cartes informatives, thématiques, décoratives ou abstraites pour particuliers et professionnels.",
+        "prestationsSoftHeader": "Les logiciels utilisés pour produire",
+        "prestationComplementInformations": [
+            "Pour une démarche personnalisée, une demande peut être réalisé en appuyant sur le bouton \"me contacter\".",
+            "Pour les cartes faisant partie d'une collection. Les liens figurant ci-dessous vous redirigeront vers mes boutiques en ligne. Vous pourrez avoir une estimation du prix des produits."
+        ]
+    },
+    "contact": {
+        "contactPresentation": [
+            "Si vous avez des questions ou si vous voulez formuler une demande de devis, vous pouvez me joindre en appuyant sur le bouton ci-dessous."
+        ],
+        "contactMail": "ab.cartographe@gmail.com"
+    },
+    "devIsVisible": true
+}
