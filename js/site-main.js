@@ -286,6 +286,28 @@
 fetch('config.json')
 	.then(response => response.json())
 	.then(jsonData => {
+		const head = document.head;
+		function setMetaTag(name, content) {
+			const existingMetaTag = head.querySelector(`meta[name="${name}"], meta[property="${name}"]`);
+
+			if (existingMetaTag) {
+				existingMetaTag.setAttribute('content', content);
+			} else {
+				const newMetaTag = document.createElement('meta');
+				newMetaTag.setAttribute('name', name);
+				newMetaTag.setAttribute('content', content);
+				head.appendChild(newMetaTag);
+			}
+		}
+		document.title = `${jsonData.header.title}`;
+		setMetaTag('author', jsonData.header.author);
+		setMetaTag('og:title', `${jsonData.header.title} - ${jsonData.header.author} - ${jsonData.header.profession}`);
+		setMetaTag('og:site_name', `${jsonData.header.title} - ${jsonData.header.author} - ${jsonData.header.profession}`);
+		setMetaTag('twitter:title', `${jsonData.header.title} - ${jsonData.header.author} - ${jsonData.header.profession}`);
+		setMetaTag('description', jsonData.header.description);
+		setMetaTag('og:description', jsonData.header.description);
+		setMetaTag('keywords', jsonData.header.keywords);
+
 		const logoImage = document.getElementById("logo-pic");
 		logoImage.src = jsonData.header.logoPic;
 
@@ -425,6 +447,23 @@ fetch('config.json')
 			prestationPresentationContainer.appendChild(p);
 		});
 
+		const prestationDemarche = document.getElementById("prestation-presentation-demarche");
+		prestationDemarche.innerHTML = jsonData.prestation.prestationDemarche;
+
+		const prestationsCustObj = document.getElementById("prestations-cust-obj");
+		prestationsCustObj.innerHTML = jsonData.prestation.prestationsCustObj;
+
+		const prestationSoftwares = document.getElementById("prestations-soft-title");
+		prestationSoftwares.innerHTML = jsonData.prestation.prestationsSoftHeader;
+
+		const prestationComplementInfos = document.getElementById("prestation-complement-informations");
+		jsonData.prestation.prestationComplementInformations.forEach(paragraph => {
+			const p = document.createElement("p");
+			p.innerHTML = paragraph;
+			prestationComplementInfos.appendChild(p);
+		});
+		prestationComplementInfos.appendChild(document.createElement("br"));
+
 		const contactPresentationContainer = document.getElementById("contact-presentation-container");
 		jsonData.contact.contactPresentation.forEach(paragraph => {
 			const p = document.createElement("p");
@@ -434,6 +473,9 @@ fetch('config.json')
 		const contactMailLink = document.getElementById("mailto-contact");
 		contactMailLink.innerHTML = jsonData.contact.contactMail;
 		contactMailLink.href = "mailto:" + jsonData.contact.contactMail;
+
+		const authorLinkFooter = document.getElementById("author-link-footer");
+		authorLinkFooter.innerHTML = jsonData.header.author;
 
 		const devSection = document.getElementById("the-dev");
 		if (jsonData.devIsVisible) {

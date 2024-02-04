@@ -1,5 +1,10 @@
 {
     "header": {
+        "title": "abcarto",
+        "author": "Axel BENOIT",
+        "profession": "Cartographe",
+        "description": "Productions et ventes de cartes",
+        "keywords": "axel benoit, cartographe, indé, indépendant, carte",
         "logoPic": "images/logo_white.png"
     },
     "author": {
@@ -17,26 +22,24 @@
                 "icon": "images/bl_lk.png"
             },
             {
+                "name": "Twitter",
+                "url": "https://twitter.com/abcartographe",
+                "icon": "images/bl_tw.png"
+            },
+            {
                 "name": "Instagram",
                 "url": "https://www.instagram.com/abcarto",
                 "icon": "images/bl_ig.png"
-            }
-        ],
-        "authorSocialMediasToAddProperly": [
-            {
-                "name": "Twitter",
-                "url": "https://twitter.com/Ezaan84300488",
-                "icon": "images/bl_tw.png"
             },
             {
                 "name": "Etsy",
                 "url": "https://www.etsy.com/fr/people/gq5kbt0rsgmfwqri",
-                "icon": "images/bl_etsy.png.todo"
+                "icon": "images/bl_etsy.png"
             },
             {
                 "name": "DeviantArt",
                 "url": "https://www.deviantart.com/abcarto",
-                "icon": "images/bl_deviantart.png.todo"
+                "icon": "images/bl_deviantart.png"
             }
         ]
     },
@@ -47,16 +50,16 @@
         "portfolioContentVideoPresentation": {
             "videoIcon": "images/play_icon.png",
             "item1": {
-                "miniature": "images/realisations/Mountain_low_miniature.png",
-                "content": "images/realisations/Mountain_low.png"
+                "miniature": "videos/carto_pearl_river.png",
+                "content": "videos/carto_pearl_river.webm"
             },
             "item2": {
-                "miniature": "images/realisations/Medoc_low_miniature.png",
-                "content": "images/realisations/Medoc_low.png"
+                "miniature": "videos/flow.png",
+                "content": "videos/flow.webm"
             },
             "item3": {
-                "miniature": "images/realisations/PEARL_RIVER_low_miniature.png",
-                "content": "images/realisations/PEARL_RIVER_low.png"
+                "miniature": "videos/data_densite_pop_gironde.png",
+                "content": "videos/data_densite_pop_gironde.webm"
             }
         },
         "portfolioMiniatureTypes": {
@@ -113,6 +116,13 @@
     "prestation": {
         "prestationPresentation": [
             "Mes cartes s'adressent aux professionnels comme aux particuliers. Que vous soyez une collectivité, une association, un entreprise ou que vous souhaitez simplement offrir un cadeau, je peux vous accompagner."
+        ],
+        "prestationDemarche": "Ma démarche d'action en quelques étapes",
+        "prestationsCustObj": "Pour produire des cartes informatives, thématiques, décoratives ou abstraites pour particuliers et professionnels.",
+        "prestationsSoftHeader": "Les logiciels utilisés pour produire",
+        "prestationComplementInformations": [
+            "Pour une démarche personnalisée, une demande peut être réalisé en appuyant sur le bouton \"me contacter\".",
+            "Pour les cartes faisant partie d'une collection. Les liens figurant ci-dessous vous redirigeront vers mes boutiques en ligne. Vous pourrez avoir une estimation du prix des produits."
         ]
     },
     "contact": {
